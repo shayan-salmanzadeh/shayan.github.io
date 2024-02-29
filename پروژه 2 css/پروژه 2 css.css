@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: aa;
+    src: url(/photo/Ubuntu-Regular.ttf);
+}
+body{
+    font-family: aa;
+    background-color: #fff;
+    vertical-align: top;     /*تا از بالا شروع کنه*/
+}
+nav{
+    position: fixed;   /* برای اینکه نو ما اون بالا ثابت بشه  کلا کار پوزیشن فیکس اینه که یه چیزی رو اونجا فیکس و ثابت میکنه*/
+    top: 0;   /*  نو بالا چپ قراربگیره  */
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 9;     /* تا از همه چیز بالا تر باشد.*/
+    padding: 15px;   /*تا یه فاصله ای از این ور اونور داشته باشه*/
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;    /*تا کنار همدیگه بیفتن*/
+    vertical-align: middle;   /* تا ال آی ها وسط نو و آرم اپل بیفتن */
+    width: 110px;   /* تا ال آی ها از هم فاصله بگیرن */
+}
+nav a{
+    text-decoration: none;   /* تا خط زیرش از بین بره */
+    color: rgb(0, 0, 0);
+}
+
+
+.main-title{
+    font-size: 4em;   /*4 برابر فونت اول */
+    text-align: center;   /* تا بیفته وسط */
+    margin: 60px 0;   /* از بالا و پایین 60 تا و از چپ و راست هیچی*/
+}
+.top-container{
+    width: 80%;   /* هشتاد درصد فضارو بگیره */
+    margin: 0 auto;   /* تا وسط بیفته */
+    text-align: center;  /* تا آیتم ها وسط بیفته */
+}
+.top-left{
+    display: inline-block;    /* تا کنار هم بیفتن */
+    width: 40%;
+    margin: 50px;   /* تا از هم فاصله بگیرن */
+    text-align: center;   /* وسط چین */
+    vertical-align: top;   /*  اون بالا بیفته */
+}
+.top-left img,.top-right img{
+    margin-bottom: 50px;
+}
+.top-left h1,.top-right h1{
+    margin: 15px 0 0;
+    font-size: 40px;
+}
+.top-left span,.top-right span{
+    font-size: 28px;
+}
+.top-right{
+    display: inline-block;   /* تا کنار هم بیفتن */
+    width: 40%;
+    margin: 50px;   /* تا از هم فاصله بگیرن */
+    text-align: center;    /* وسط چین */
+    vertical-align: top;   /*  اون بالا بیفته */
+}
+
+.middle-container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+#compare{
+    background-color: #fafafa;
+    padding: 50px;   /* تا بیاد داخل تر */
+}
+.middle-left,.middle-center,.middle-right{
+    width: 30%;   /* چون سه تا هستند 30% دادیم تا کنار هم بیفتن */
+    display: inline-block;
+    padding: 15px;   /* خیلی به هم نزدیک بودن اینو دادیم تا یه کم از هم فاصله بگیرن*/
+    text-align: center;
+    vertical-align: top;
+}
+.color-circle{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin:25px 1px;
+    display: inline-block;
+}
+.color-circle-1{
+    background-color: #abaeb3;
+}
+.color-circle-2{
+    background-color: #e2e3e4;
+}
+.compare-items img{
+    margin-top: 40px;
+}
+
+
+
+.bottom-container{
+    width: 96%;
+    margin: 0 auto;
+    text-align: center;
+}
+.bottom-left,.bottom-right{
+    width: 47%;
+    margin: 1%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 50px;
+}
+.bottom-item-box{
+    background-color: #f2f2f2;
+    height: 610px;
+}
+.bottom-item-text{
+    padding: 10%;
+    margin: 0 auto;
+    text-align: center;
+}
+.bottom-item-text h2{
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.bottom-item-text h3{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+.bottom-item-box-image {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .bottom-item-text-absolute {
+    position: absolute;
+    top: 37%;
+    width: 100%;
+  }
+  
+  .bottom-item-text-absolute h2 {
+    color: #fff;
+    font-size: 46px;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .bottom-item-text-absolute p {
+    color: #fff;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer {
+    background-color: #f5f5f7;
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+  }
+
+
+@media only screen and (max-width:768px){
+
+nav ul li {
+    width: 100%;
+    max-width: 65px;
+    font-size: 14px;
+}
+nav ul li:nth-child(2){
+    width: 45px;
+}
+nav ul li:first-child{
+    width: 50px;
+}
+.main-title{
+    font-size: 2em;
+}
+.top-container,.middle-container{
+    width: 100%;
+}
+.top-left,.top-right{
+    width: 90%;
+    margin: 0 10px 30px;
+}
+.top-left h1,.top-right h1{
+    font-size: 30px;
+}
+.top-left span,.top-right span{
+    font-size: 20px;
+}
+.middle-container{
+    width: 100%;
+}
+.middle-left,.middle-center,.middle-right{
+    width: 92%;
+    display: block;
+}
+.bottom-left,.bottom-right{
+    width: 98%;
+    display: block;
+}
+.bottom-item-box{
+    height: 400px;
+    margin: 15px 0;
+}
+.bottom-item-text-absolute h2{
+    font-size: 30px;
+}
+footer{
+    font-size: 14px;
+}
+}
